@@ -1,0 +1,32 @@
+<div id="addEmployeeModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden modal">
+        <div class="bg-white rounded-lg p-6 w-full max-w-md">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-semibold text-[#4A628A]">Add New Employee</h3>
+                <button onclick="closeAddEmployeeModal()" class="text-gray-500 hover:text-gray-700">
+                    <span class="material-icons">close</span>
+                </button>
+            </div>
+            <form method="POST" action="">
+                <div class="mb-4">
+                    <label for="employee_name" class="block text-gray-700 mb-2">Employee Name</label>
+                    <input type="text" id="employee_name" name="employee_name" class="w-full px-3 py-2 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="role" class="block text-gray-700 mb-2">Role</label>
+                    <input type="text" id="role" name="role" class="w-full px-3 py-2 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="department" class="block text-gray-700 mb-2">Department</label>
+                    <input type="text" id="department" name="department" class="w-full px-3 py-2 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="contact" class="block text-gray-700 mb-2">Contact Information</label>
+                    <input type="text" id="contact" name="contact" class="w-full px-3 py-2 border rounded" required>
+                </div>
+                <div class="flex justify-end space-x-3">
+                    <button type="button" onclick="closeAddEmployeeModal()" class="px-4 py-2 border rounded text-gray-700 hover:bg-gray-100 transition">Cancel</button>
+                    <button type="submit" name="add_employee" class="bg-[#4A628A] hover:bg-[#3a4a6a] text-white px-4 py-2 rounded transition">Save Employee</button>
+                </div>
+            </form>
+        </div>
+    </div>

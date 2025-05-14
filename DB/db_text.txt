@@ -1,0 +1,21 @@
+<-----------PROJECT MANAGEMENT----------->
+
+PROJECT id name start_date end_date status created_at updated_at
+
+TASK id name project_id start_date end_date status created_at updated_at
+
+EMPLOYEES  id name role department contact email created_at updated_at
+
+RESOURCES  id name type availability quantity project_id created_at updated_at
+
+RISKS  id name type availability quantity project_id created_at updated_at
+
+PROGRESS REPORT  id project_id submission_date status details created_at updated_at
+
+<-----------PROCUREMENT MANAGEMENT----------->
+
+PROCUREMENT procurement_id procurement_date total_amount status	supplier_id	
+PROCUREMENT ITEM item_id procurement_id	item_name quantity unit_price	
+SUPPLIES supplier_id supplier_name contact_info rating	
+
+WAREHOUSE warehouse_id location	capacity	
